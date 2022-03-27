@@ -132,8 +132,11 @@ public class Purchase {
 			for(Product p:cart.getProducts())
 			{
 				p.setDiscountPerc(0);
+				vrednost+=p.getPrice();
 			}
 			TotalDiscount=0;
+			Total=vrednost;
+			SubTotal=vrednost;
 		}
 		return vrednost;
 	}
